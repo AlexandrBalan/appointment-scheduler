@@ -5,7 +5,7 @@ import express from 'express';
 const app = express();
 
 //define a port number for our server to listen on
-const PORT = 3004;
+const PORT = 3003;
 
 //create an array to store our appointments
 const appointments = [];
