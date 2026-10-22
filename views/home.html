@@ -8,26 +8,34 @@
 <body>
     <main class="container">
         <section class="contact-section">
-            <h2>Get in Touch</h2>
+            <h1>Appointment Scheduler</h1>
+
+
+            <h2>Book an Appointment</h2>
             <form action="/contact" method="POST" class="contact-form">
                 
                 <div class="form-group">
-                    <label for="fullName">Full Name</label>
-                    <input type="text" id="fullName" name="fullName" placeholder="Jane Doe" required>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Jane" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="meetingDate">Meeting Date</label>
+                    <input type="date" id="meetingDate" name="meetingDate" required>
+                </div>
+
+                <div class="meeting-time">
+                    <label for="meetingTime">Meeting Time</label>
+                    <input type="time" id="meetingTime" name="meetingTime" required>
                 </div>
 
                 <div class="form-group full-width">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
-                </div>
-
-                <div class="form-group full-width">
-                    <button type="submit" class="btn-submit">Send Message</button>
+                    <button type="submit" class="btn-submit">Book Appointment</button>
                 </div>
 
             </form>
