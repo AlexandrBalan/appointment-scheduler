@@ -10,9 +10,13 @@ const PORT = 3004;
 //enable static file serving
 app.use(express.static('public'));
 
+//Add an order confirmation route
+app.get('/confirm',(req,res)=>{
+  res.sendFile(`${import.meta.dirname}/views/confirm.html`)
+});
+
 //defining a default route ("/")
 app.get('/', (req, res) => {
-    // res.send('Welcome to My Ice Cream Shop');
     res.sendFile(`${import.meta.dirname}/views/home.html`);
 });
 
